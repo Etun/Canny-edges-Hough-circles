@@ -1,0 +1,32 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal" >
+
+        <Button
+            android:id="@+id/canny"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:onClick="Canny"
+            android:text="Canny" />
+
+        <Button
+            android:id="@+id/hough"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:onClick="Hough"
+            android:text="Hough" />
+    </LinearLayout>
+    
+    <org.opencv.android.JavaCameraView
+        android:id="@+id/camera_view"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent" />
+
+</LinearLayout>
